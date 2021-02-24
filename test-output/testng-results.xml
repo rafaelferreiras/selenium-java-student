@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-24T00:47:01 BRT" name="Default suite" finished-at="2021-02-24T00:47:28 BRT" duration-ms="26985">
+    <groups>
+    </groups>
+    <test started-at="2021-02-24T00:47:01 BRT" name="Default test" finished-at="2021-02-24T00:47:28 BRT" duration-ms="26985">
+      <class name="com.rafaelferreira.test.BookRoomWebTest">
+        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.rafaelferreira.test.BookRoomWebTest@76e9f00b]" started-at="2021-02-24T00:47:01 BRT" name="preCondition" finished-at="2021-02-24T00:47:12 BRT" duration-ms="10484" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="Desafio01()[pri:0, instance:com.rafaelferreira.test.BookRoomWebTest@76e9f00b]" started-at="2021-02-24T00:47:12 BRT" name="Desafio01" description="Desafio 001" finished-at="2021-02-24T00:47:27 BRT" duration-ms="15496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Desafio01 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.rafaelferreira.test.BookRoomWebTest@76e9f00b]" started-at="2021-02-24T00:47:27 BRT" name="postCondition" finished-at="2021-02-24T00:47:28 BRT" duration-ms="789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.rafaelferreira.test.BookRoomWebTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
