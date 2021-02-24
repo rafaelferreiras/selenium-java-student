@@ -1,5 +1,7 @@
 package com.rafaelferreira.page;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
@@ -48,6 +50,11 @@ public class AbstractPageObject {
 
 	public WebElement isElementvisibilityOf(WebElement element) {
 		return DriverManager.waitDriver().until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(element)));
+	}
+	
+	public List<WebElement> isElementVisible(List<WebElement> element) {
+		return DriverManager.waitDriver()
+				.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElements(element)));
 	}
 
 }

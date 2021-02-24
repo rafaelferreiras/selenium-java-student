@@ -5,9 +5,9 @@
     <classes>
       <class name="com.rafaelferreira.test.BookRoomWebTest">
         <methods>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
-          <include name="Desafio01"/>
+          <include name="beforeMethod"/>
+          <include name="addCustomer"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- com.rafaelferreira.test.BookRoomWebTest -->
     </classes>

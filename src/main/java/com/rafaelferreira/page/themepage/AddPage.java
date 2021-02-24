@@ -11,6 +11,8 @@ import io.qameta.allure.Step;
 
 public class AddPage extends AbstractPageObject {
 
+	
+	
 	@FindBy(id = "field-customerName")
 	private WebElement name;
 
@@ -44,9 +46,9 @@ public class AddPage extends AbstractPageObject {
 	@FindBy(id = "field_salesRepEmployeeNumber_chosen")
 	private WebElement fromEmployeer;
 
-	@FindBy(className = "chosen-results")
+	@FindBy(className = "active-result")
 	private List<WebElement> dropDowns;
-
+	
 	@FindBy(id = "field-creditLimit")
 	private WebElement creditLimit;
 
@@ -115,11 +117,11 @@ public class AddPage extends AbstractPageObject {
 	}
 	
 	@Step
-	public void fromEmployeer(int index) {
+	public void fromEmployeer(String fromEmployeer) {
 
 		click(this.fromEmployeer);
-		WebElement dropDownOne = dropDowns.get(index);
-		click(dropDownOne);	
+		isElementVisible(dropDowns);
+		click(dropDowns.stream().filter(s -> s.getText().equalsIgnoreCase(fromEmployeer)).findFirst().get());	
 	}
 	
 	@Step

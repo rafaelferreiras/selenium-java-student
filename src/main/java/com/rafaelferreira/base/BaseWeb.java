@@ -17,7 +17,7 @@ public abstract class BaseWeb {
 
 	@BeforeMethod(alwaysRun = true)
 	@Parameters("browser")
-	public void preCondition(@Optional("chrome") String browser) {
+	public void beforeMethod(@Optional("chrome") String browser) {
 		Configuration configuration = ConfigurationManager.getConfiguration();
 
 		DriverFactory driverFactory = new DriverFactory();
@@ -28,7 +28,7 @@ public abstract class BaseWeb {
 	}
 
 	@AfterMethod(alwaysRun = true)
-	public void postCondition() {
+	public void afterMethod() {
 		DriverManager.quit();
 	}
 }

@@ -10,8 +10,8 @@ import com.rafaelferreira.page.themepage.AddPage;
 
 public class BookRoomWebTest extends BaseWeb {
 
-	@Test(description = "Desafio 001")
-	public void Desafio01() {
+	@Test(description = "Add Customer Test")
+	public void addCustomer() {
 
 		BootstrapThemePage pageTheme = new BootstrapThemePage();
 		AddPage addPage = new AddPage();
@@ -28,7 +28,7 @@ public class BookRoomWebTest extends BaseWeb {
 		addPage.state("DF");
 		addPage.postalCode("720000");
 		addPage.country("BRAZIL");
-		addPage.fromEmployeer(0);
+		addPage.fromEmployeer("bow");
 		addPage.creditLimit("20000");
 		addPage.buttonSave();
 
